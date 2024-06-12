@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS-D11</title>
+</head>
+<body>
+    <script>
+        // Assignment
+        //  Q-1 Write a JavaScript program to determine whether a given array is in ascending order or not.
+        a=[24,67,89,100,101]
+        status="false"
+        for(i=0;i<a.length-1;i++)
+        {
+            if(a[i]<a[i+1])
+            {
+                status="true";
+            }
+            else
+            {
+                status="false";
+                break;  
+            }
+        }
+        if(status=="true")
+        {
+            console.log(`Given array ${a} is in Asscending order`);
+        }
+        else
+        {
+            console.log(`Given array ${a} is not in order`);
+        }
+        
+
+        //Q-2 Write a JavaScript program to determine whether a given array is in descending order or not.
+         status="false"
+        a=[40,18,3,1]
+        for(i=0;i<a.length-1;i++)
+        {
+            if(a[i]>a[i+1])
+            {
+                status="true";
+            }
+            else
+            {
+                status="false";
+                break;
+            }
+        }
+        if(status=="true")
+        {
+            console.log(`Given array ${a} is in Descending order`);
+        }
+        else
+        {
+            console.log(`Given array ${a} is not in order`);
+        }
+
+        
+
+        
+
+
+    </script>
+    
+</body>
+</html>
